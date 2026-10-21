@@ -120,7 +120,7 @@ export default function RadarCanvas({ strong }) {
       ctx.stroke()
 
       // targets
-      ctx.font = '11px Barlow, system-ui, sans-serif'
+      ctx.font = '10px "Space Mono", "Rajdhani", monospace'
       for (const t of targets) {
         const hit = Math.abs(((t.a - sweep) % TAU + TAU) % TAU) < 0.05
         if (hit || still) { t.found = true; t.lit = 1 }
@@ -129,11 +129,11 @@ export default function RadarCanvas({ strong }) {
         const a = Math.max(0.35, t.lit)
         drone(x, y, 4, a)
         bracket(x, y, 16, a)
-        ctx.fillStyle = `rgba(255,255,255,${a * 0.85})`
+        ctx.fillStyle = `rgba(255,255,255,${a * 0.9})`
         const bearing = String(Math.round(((t.a * 180) / Math.PI + 90) % 360)).padStart(3, '0')
-        ctx.fillText(`TRK ${t.id}`, x + 22, y - 4)
-        ctx.fillStyle = `rgba(255,255,255,${a * 0.5})`
-        ctx.fillText(`BRG ${bearing}`, x + 22, y + 10)
+        ctx.fillText(`SWARM-${t.id}`, x + 22, y - 4)
+        ctx.fillStyle = `rgba(252,25,32,${a * 0.85})`
+        ctx.fillText(`BRG ${bearing}° // 250 KM/H`, x + 22, y + 10)
       }
     }
 

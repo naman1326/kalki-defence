@@ -1,31 +1,40 @@
 import { useState } from 'react'
+import LoadingScreen from './components/LoadingScreen.jsx'
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
-import Mission from './components/Mission.jsx'
+import ProductShowcase from './components/ProductShowcase.jsx'
 import FocusAreas from './components/FocusAreas.jsx'
-import Approach from './components/Approach.jsx'
-import Vision from './components/Vision.jsx'
+import Mission from './components/Mission.jsx'
+import PartnerTicker from './components/PartnerTicker.jsx'
+import TeamSection from './components/TeamSection.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
-import VideoModal from './components/VideoModal.jsx'
+import EmailServiceModal from './components/EmailServiceModal.jsx'
 
 export default function App() {
-  const [filmOpen, setFilmOpen] = useState(false)
+  const [briefingOpen, setBriefingOpen] = useState(false)
+
+  const openBriefing = () => setBriefingOpen(true)
+  const closeBriefing = () => setBriefingOpen(false)
 
   return (
     <>
-      <a className="skip" href="#main">Skip to content</a>
-      <Header />
+      {/* Loading sequence: loading.mp4 autoplays and fades out at logo reveal */}
+      <LoadingScreen />
+
+      <a className="skip" href="#main">Skip to tactical content</a>
+      <Header onRequestBriefing={openBriefing} />
       <main id="main">
-        <Hero onWatch={() => setFilmOpen(true)} />
-        <Mission />
+        <Hero onRequestBriefing={openBriefing} />
+        <ProductShowcase onRequestBriefing={openBriefing} />
         <FocusAreas />
-        <Approach />
-        <Vision />
-        <Contact />
+        <Mission />
+        <PartnerTicker />
+        <TeamSection />
+        <Contact onRequestBriefing={openBriefing} />
       </main>
-      <Footer />
-      <VideoModal open={filmOpen} onClose={() => setFilmOpen(false)} />
+      <Footer onRequestBriefing={openBriefing} />
+      <EmailServiceModal open={briefingOpen} onClose={closeBriefing} />
     </>
   )
 }
