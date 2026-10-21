@@ -126,19 +126,6 @@ export default function LoadingScreen({ onComplete }) {
         <div className="loading-hud__reticle loading-hud__reticle--tr" />
         <div className="loading-hud__reticle loading-hud__reticle--bl" />
         <div className="loading-hud__reticle loading-hud__reticle--br" />
-
-        {/* Bottom Status Readout */}
-        <div className="loading-hud__footer">
-          <div className="loading-hud__status">
-            <span className="loading-hud__radar-ping" />
-            <span className="loading-hud__mono">
-              SYSTEM STATUS: AIR DEFENCE MESH LIVE
-            </span>
-          </div>
-          <div className="loading-hud__legal">
-            CIN: U72100PN2026PTC260421 // V-NEST VIT CHENNAI
-          </div>
-        </div>
       </div>
     </div>
   )
