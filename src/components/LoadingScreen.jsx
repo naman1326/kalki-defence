@@ -100,8 +100,11 @@ export default function LoadingScreen({ onComplete }) {
         <div className="loading-hud__header">
           <div className="loading-hud__brand">
             <span className="loading-hud__dot" />
-            <span className="loading-hud__mono">
+            <span className="loading-hud__mono loading-hud__mono--desktop">
               K.A.L.K.I DEFENCE SYSTEMS // AIR DEFENCE MESH INIT
+            </span>
+            <span className="loading-hud__mono loading-hud__mono--mobile">
+              K.A.L.K.I DEFENCE
             </span>
           </div>
           <button
@@ -110,7 +113,8 @@ export default function LoadingScreen({ onComplete }) {
             onClick={triggerFade}
             aria-label="Skip introductory video sequence"
           >
-            <span>SKIP INTRO [ESC]</span>
+            <span className="loading-hud__skip-text--desktop">SKIP INTRO [ESC]</span>
+            <span className="loading-hud__skip-text--mobile">SKIP</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
             </svg>

@@ -109,12 +109,12 @@ export default function ProductShowcase({ onRequestBriefing }) {
 
               {/* Tactical Defensive Interceptor Drone Silhouette */}
               <svg
+                className="drone-silhouette-svg"
                 width="340"
                 height="240"
                 viewBox="0 0 340 240"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                style={{ filter: 'drop-shadow(0 15px 30px rgba(252, 25, 32, 0.4))' }}
               >
                 {/* Central High-Torque Carbon Airframe Frame */}
                 <rect x="135" y="85" width="70" height="70" rx="8" fill="#18181b" stroke="#ffffff" strokeWidth="1.5" />
@@ -152,23 +152,7 @@ export default function ProductShowcase({ onRequestBriefing }) {
               </svg>
 
               {/* HUD Lock Target Reticle Text */}
-              <div
-                style={{
-                  position: 'absolute',
-                  bottom: '12px',
-                  left: '50%',
-                  transform: 'translateX(-50%)',
-                  background: 'rgba(0,0,0,0.85)',
-                  border: '1px solid var(--accent-red)',
-                  padding: '4px 14px',
-                  fontFamily: 'var(--font-hud)',
-                  fontSize: '0.6875rem',
-                  letterSpacing: '0.2em',
-                  color: '#ffffff',
-                  textTransform: 'uppercase',
-                  whiteSpace: 'nowrap',
-                }}
-              >
+              <div className="drone-hud-lock-badge">
                 RADAR CUE: INTEGRATED // C-UAS INTERCEPT LOCK
               </div>
             </div>

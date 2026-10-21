@@ -46,13 +46,18 @@ export default function FocusAreas() {
 
         {/* Competitive Benchmark Table */}
         <div style={{ marginTop: '56px' }}>
-          <div style={{ marginBottom: '20px' }}>
-            <span style={{ fontFamily: 'var(--font-hud)', fontSize: '0.8125rem', letterSpacing: '0.15em', color: 'var(--accent-red-bright)', textTransform: 'uppercase' }}>
-              MARKET BENCHMARK & COMPETITIVE MATRIX
+          <div style={{ marginBottom: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '10px' }}>
+            <div>
+              <span style={{ fontFamily: 'var(--font-hud)', fontSize: '0.8125rem', letterSpacing: '0.15em', color: 'var(--accent-red-bright)', textTransform: 'uppercase' }}>
+                MARKET BENCHMARK & COMPETITIVE MATRIX
+              </span>
+              <h3 style={{ fontSize: 'clamp(1.25rem, 3.5vw, 1.5rem)', fontFamily: 'var(--font-display)', color: '#ffffff', marginTop: '6px' }}>
+                HOW KALKI COMPUTES AGAINST ALTERNATIVES
+              </h3>
+            </div>
+            <span className="table-scroll-hint">
+              SWIPE TO COMPARE ↔
             </span>
-            <h3 style={{ fontSize: '1.5rem', fontFamily: 'var(--font-display)', color: '#ffffff', marginTop: '6px' }}>
-              HOW KALKI COMPUTES AGAINST ALTERNATIVES
-            </h3>
           </div>
 
           <div className="competition-table-wrapper">

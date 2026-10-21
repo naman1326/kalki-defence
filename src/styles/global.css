@@ -1324,59 +1324,249 @@ section[id] {
     display: flex;
   }
   .header__nav {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 64px;
     left: 0;
     right: 0;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
-    background-color: rgba(0, 0, 0, 0.98);
-    padding: 24px var(--gutter) 36px;
-    border-bottom: 1px solid var(--border-medium);
+    gap: 16px;
+    background-color: rgba(7, 9, 13, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 24px var(--gutter) 40px;
+    border-bottom: 2px solid var(--accent-red);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.9);
     display: none;
+    z-index: 1000;
   }
   .header__nav.nav--open {
     display: flex;
   }
   .header__nav a:not(.header__cta) {
     width: 100%;
-    padding: 10px 0;
-    font-size: 1rem;
-    border-bottom: 1px solid var(--border-subtle);
+    padding: 14px 0;
+    font-size: 1.05rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
   .header__cta {
-    margin-top: 12px;
+    margin-top: 14px;
     width: 100%;
+    justify-content: center;
+    padding: 14px 20px !important;
   }
-  .mission-split {
+  .product-grid {
     grid-template-columns: 1fr;
     gap: 36px;
   }
-  .contact-grid {
+  .mission-split {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
   }
-  .tactical-form {
+  .contact-section-grid {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
 }
 
 @media (max-width: 640px) {
-  .hero__metrics {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  :root {
+    --gutter: 16px;
   }
+  .section {
+    padding: 56px 0;
+  }
+  .title-section {
+    font-size: clamp(1.6rem, 6.5vw, 2.3rem);
+    line-height: 1.1;
+  }
+  .tag-telemetry {
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+  }
+  .tactical-reticle-card {
+    padding: 20px 16px;
+  }
+
+  /* Hero Section on Mobile */
+  .hero {
+    padding: 96px 0 44px;
+    min-height: auto;
+  }
+  .hero__headline {
+    font-size: clamp(1.9rem, 7.8vw, 2.8rem);
+    line-height: 1.12;
+    margin-top: 16px;
+  }
+  .hero__sub {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 16px;
+  }
+  .hero__actions {
+    margin-top: 28px;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+  .hero__actions .btn-polygon,
+  .hero__actions .btn-polygon-ghost {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+  }
+  .hero__metrics {
+    margin-top: 36px;
+    padding-top: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .metric-card {
+    padding: 14px 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+  }
+  .metric-card__value {
+    font-size: clamp(1.35rem, 5vw, 1.75rem);
+  }
+  .metric-card__label {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+  }
+  .metric-card__detail {
+    font-size: 0.75rem;
+    line-height: 1.35;
+  }
+
+  /* Capabilities Grid */
   .capabilities-grid {
     grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .capability-card {
+    padding: 20px 16px;
+  }
+  .capability-title {
+    font-size: 1.15rem;
+  }
+  .capability-body {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  /* Product Subsystems on Mobile */
+  .subsystem-specs {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .subsystem-btn {
+    padding: 14px 16px;
+    font-size: 0.95rem;
+  }
+  .subsystem-body {
+    padding: 0 16px 16px;
+  }
+  .drone-hud-pod {
+    aspect-ratio: 16 / 12;
+    max-width: 100%;
+  }
+  .telemetry-readout {
+    font-size: 0.58rem;
+    letter-spacing: 0.08em;
+    padding: 2px 4px;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 2px;
+  }
+  .telemetry-readout--tl { top: 8px; left: 8px; }
+  .telemetry-readout--tr { top: 8px; right: 8px; }
+  .telemetry-readout--bl { bottom: 34px; left: 8px; }
+  .telemetry-readout--br { bottom: 34px; right: 8px; }
+  .drone-hud-lock-badge {
+    bottom: 8px;
+    font-size: 0.5625rem;
+    letter-spacing: 0.08em;
+    padding: 3px 8px;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Team Grid */
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .team-card {
+    padding: 20px 16px;
+  }
+  .team-card__name {
+    font-size: 1.15rem;
+  }
+
+  /* Footer on Mobile */
+  .footer {
+    padding: 56px 0 32px;
+  }
+  .footer__statement {
+    font-size: clamp(1.4rem, 5.5vw, 2rem);
+    line-height: 1.15;
   }
   .footer__columns {
     grid-template-columns: 1fr;
+    gap: 28px;
   }
   .footer__bottom {
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
     text-align: center;
+    font-size: 0.75rem;
+  }
+  .footer .btn-polygon {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Ticker on Mobile */
+  .ticker-section {
+    padding: 32px 0;
+  }
+  .ticker-track {
+    gap: 16px;
+  }
+  .ticker-item {
+    min-width: 180px;
+    padding: 12px 18px;
+  }
+  .ticker-item__name {
+    font-size: 0.8125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --gutter: 14px;
+  }
+  .hero__metrics {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .contact-reference-card {
+    padding: 18px 14px;
+    border-radius: 16px;
+    gap: 16px;
+  }
+  .contact-email-link {
+    font-size: 0.85rem;
+    padding: 10px 12px;
+  }
+  .contact-phone-item {
+    padding: 10px 12px;
+  }
+  .contact-phone-num {
+    font-size: 0.9rem;
   }
 }
 
@@ -2196,5 +2386,97 @@ section[id] {
   border-radius: 2px;
   letter-spacing: 0.1em;
   margin-left: auto;
+}
+
+/* ==========================================================================
+   MOBILE HELPER CLASSES & VIEWPORT ADAPTATIONS
+   ========================================================================== */
+.loading-hud__mono--mobile {
+  display: none;
+}
+.loading-hud__skip-text--mobile {
+  display: none;
+}
+
+.table-scroll-hint {
+  display: none;
+  font-family: var(--font-hud);
+  font-size: 0.6875rem;
+  color: #00e5ff;
+  letter-spacing: 0.15em;
+  background: rgba(0, 229, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .table-scroll-hint {
+    display: inline-block;
+  }
+  .competition-table-wrapper {
+    -webkit-overflow-scrolling: touch;
+  }
+  .competition-table th,
+  .competition-table td {
+    padding: 12px 14px;
+    font-size: 0.8125rem;
+  }
+  .comp-name {
+    min-width: 140px;
+  }
+  .comp-limit, .comp-edge {
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 640px) {
+  .loading-hud__mono--desktop {
+    display: none;
+  }
+  .loading-hud__mono--mobile {
+    display: inline;
+    font-size: 0.7rem;
+  }
+  .loading-hud__skip-text--desktop {
+    display: none;
+  }
+  .loading-hud__skip-text--mobile {
+    display: inline;
+  }
+  .loading-hud__skip-btn {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+  .loading-hud__footer {
+    padding: 6px 12px;
+  }
+  .loading-hud__legal {
+    font-size: 0.625rem;
+    letter-spacing: 0.08em;
+  }
+}
+
+@media (max-width: 480px) {
+  .email-modal-card {
+    padding: 20px 16px 16px;
+    border-radius: 18px;
+    max-height: 94vh;
+    overflow-y: auto;
+    gap: 14px;
+  }
+  .email-modal-title {
+    font-size: 1.15rem;
+  }
+  .email-service-btn {
+    padding: 12px 16px;
+    font-size: 0.9375rem;
+    border-radius: 12px;
+  }
+  .email-service-left {
+    gap: 10px;
+  }
+  .email-service-name {
+    font-size: 0.9375rem;
+  }
 }
 
