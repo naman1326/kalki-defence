@@ -23,7 +23,7 @@ export default function App() {
       <LoadingScreen />
 
       <a className="skip" href="#main">Skip to tactical content</a>
-      <Header onRequestBriefing={openBriefing} />
+      <Header />
       <main id="main">
         <Hero onRequestBriefing={openBriefing} />
         <ProductShowcase onRequestBriefing={openBriefing} />

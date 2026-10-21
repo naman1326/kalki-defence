@@ -505,28 +505,6 @@ section[id] {
   animation: radar-ping 1.2s infinite alternate;
 }
 
-.header__progress-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2.5px;
-  background: linear-gradient(90deg, #fc1920 0%, #ff4d4d 75%, #00e5ff 100%);
-  box-shadow: 0 0 10px rgba(252, 25, 32, 0.8), 0 0 4px #00e5ff;
-  transition: width 0.08s linear;
-  pointer-events: none;
-  z-index: 100;
-}
-
-.header__badge {
-  display: flex !important;
-}
-
-@media (max-width: 900px) {
-  .header__badge {
-    display: none !important;
-  }
-}
-
 .header__cta {
   padding: 10px 20px !important;
   font-size: 0.8125rem !important;
