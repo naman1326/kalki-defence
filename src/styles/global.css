@@ -2366,6 +2366,66 @@ section[id] {
   margin-left: auto;
 }
 
+.team-contact-linkedin--clickable {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #00e5ff;
+  text-decoration: none;
+  font-family: var(--font-hud);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  padding: 8px 12px;
+  background: rgba(0, 229, 255, 0.04);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.team-contact-linkedin--clickable:hover {
+  background: rgba(0, 229, 255, 0.12);
+  border-color: rgba(0, 229, 255, 0.5);
+  color: #ffffff;
+}
+
+.team-contact-linkedin__main {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.team-contact-linkedin__main svg {
+  flex-shrink: 0;
+  color: #00e5ff;
+}
+
+.team-contact-linkedin--clickable:hover .team-contact-linkedin__main svg {
+  color: #ffffff;
+}
+
+.linkedin-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-hud);
+  font-size: 0.6875rem;
+  background: rgba(0, 229, 255, 0.12);
+  color: #00e5ff;
+  padding: 2px 7px;
+  border-radius: 2px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin-left: auto;
+  transition: all 0.2s ease;
+}
+
+.team-contact-linkedin--clickable:hover .linkedin-tag {
+  background: #00e5ff;
+  color: #090a0f;
+}
+
 /* ==========================================================================
    MOBILE HELPER CLASSES & VIEWPORT ADAPTATIONS
    ========================================================================== */

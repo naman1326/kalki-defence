@@ -32,39 +32,33 @@ export const NAV = [
 export const TEAM_MEMBERS = [
   {
     name: 'Omkar Abhijit Jagtap',
-    mobile: '+91 75584 95105',
-    tel: '+917558495105',
     role: 'Co-Founder & System Architect',
+    linkedin: 'https://www.linkedin.com/in/omkarj23/',
   },
   {
     name: 'Naitik Agrawal',
-    mobile: '+91 88392 15503',
-    tel: '+918839215503',
     role: 'Co-Founder & Hardware Engineering',
+    linkedin: 'https://www.linkedin.com/in/naitik-agrawal-294b1032a/',
   },
   {
     name: 'Sai Amol Kadam',
-    mobile: '+91 91727 53456',
-    tel: '+919172753456',
     role: 'Co-Founder & Edge AI / Vision',
+    linkedin: 'https://www.linkedin.com/in/sai-kadam-204099320/',
   },
   {
     name: 'Shailesh Chauhan',
-    mobile: '+91 87974 76933',
-    tel: '+918797476933',
     role: 'Co-Founder & Swarm Algorithms',
+    linkedin: 'https://www.linkedin.com/in/shaileshchauhannn/',
   },
   {
     name: 'Anurag Raghuvanshi',
-    mobile: '+91 63942 09020',
-    tel: '+916394209020',
     role: 'Co-Founder & Avionics Integration',
+    linkedin: 'https://www.linkedin.com/in/anurag-raghuvanshi-330ba5384/',
   },
   {
     name: 'Govind Yadav',
-    mobile: '+91 90243 68874',
-    tel: '+919024368874',
     role: 'Co-Founder & Flight Dynamics',
+    linkedin: 'https://www.linkedin.com/in/govind-yadav-0aba25332/',
   },
 ]
 
@@ -120,11 +114,11 @@ export const PRODUCT = {
       id: '04',
       title: 'Hybrid AI + Kinetic Interception Dynamics',
       subtitle: 'Agile High-Speed Counter-UAS Interceptor',
-      desc: 'Powered by 4x Emax ECOII-2807-1300KV brushless motors, 60A BLHeli_S ESC, and 22.2V 6S 4200mAh LiPo battery pack mounted on a reinforced 7-inch carbon fiber airframe. Delivers explosive acceleration and high-G terminal interception authority to physically neutralize incoming threats.',
+      desc: 'Delivers explosive acceleration and high-G terminal interception authority to physically neutralize incoming threats.',
       specs: [
-        { key: 'Flight Control', val: 'Holybro Kakute H7 V1.3' },
-        { key: 'Airframe', val: '7-inch High-Modulus Carbon Fiber' },
-        { key: 'Power Subsystem', val: '6S 22.2V 4200mAh 35C LiPo' },
+        { key: 'Flight Control', val: 'Autonomous Flight Controller' },
+        { key: 'Airframe', val: 'High-Modulus Carbon Fiber' },
+        { key: 'Power Subsystem', val: 'High-Discharge Power Subsystem' },
       ],
     },
   ],

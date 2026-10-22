@@ -125,7 +125,7 @@ export default function ProductShowcase({ onRequestBriefing }) {
                 <line x1="140" y1="150" x2="60" y2="200" stroke="#a1a1aa" strokeWidth="6" strokeLinecap="round" />
                 <line x1="200" y1="150" x2="280" y2="200" stroke="#a1a1aa" strokeWidth="6" strokeLinecap="round" />
 
-                {/* 4 Emax ECOII Brushless Motors */}
+                {/* 4 Brushless Interceptor Motors */}
                 <circle cx="60" cy="40" r="18" fill="#27272a" stroke="#fc1920" strokeWidth="2" />
                 <circle cx="280" cy="40" r="18" fill="#27272a" stroke="#fc1920" strokeWidth="2" />
                 <circle cx="60" cy="200" r="18" fill="#27272a" stroke="#fc1920" strokeWidth="2" />
