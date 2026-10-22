@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL, DIRECT_PHONES, COMPANY_INFO } from '../config.js'
+import { COMPANY_INFO } from '../config.js'
 
 export default function Footer({ onRequestBriefing }) {
   return (
@@ -57,25 +57,6 @@ export default function Footer({ onRequestBriefing }) {
               <a href="#differentiators">Strategic Differentiators</a>
               <a href="#mission">Problem & Solution</a>
               <a href="#contact">Tactical Briefing Channel</a>
-            </div>
-          </div>
-
-          <div>
-            <div className="footer__col-title">Direct Communications</div>
-            <div className="footer__links">
-              <a href="#team">Founding Team (Team KDS)</a>
-              <button
-                type="button"
-                onClick={onRequestBriefing}
-                style={{ background: 'none', border: 'none', color: 'var(--accent-red-bright)', padding: 0, font: 'inherit', cursor: 'pointer', textAlign: 'left', wordBreak: 'break-all' }}
-              >
-                {CONTACT_EMAIL}
-              </button>
-              {DIRECT_PHONES.map((p) => (
-                <a key={p.tel} href={`tel:${p.tel}`} style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8125rem' }}>
-                  {p.display}
-                </a>
-              ))}
             </div>
           </div>
         </div>
