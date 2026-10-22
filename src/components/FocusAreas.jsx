@@ -1,4 +1,4 @@
-import { KEY_DIFFERENTIATORS, COMPETITION_COMPARISON } from '../config.js'
+import { KEY_DIFFERENTIATORS } from '../config.js'
 
 export default function FocusAreas() {
   return (
@@ -42,48 +42,6 @@ export default function FocusAreas() {
               <p className="capability-body">{diff.body}</p>
             </div>
           ))}
-        </div>
-
-        {/* Competitive Benchmark Table */}
-        <div style={{ marginTop: '56px' }}>
-          <div style={{ marginBottom: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '10px' }}>
-            <div>
-              <span style={{ fontFamily: 'var(--font-hud)', fontSize: '0.8125rem', letterSpacing: '0.15em', color: 'var(--accent-red-bright)', textTransform: 'uppercase' }}>
-                MARKET BENCHMARK & COMPETITIVE MATRIX
-              </span>
-              <h3 style={{ fontSize: 'clamp(1.25rem, 3.5vw, 1.5rem)', fontFamily: 'var(--font-display)', color: '#ffffff', marginTop: '6px' }}>
-                HOW KALKI COMPUTES AGAINST ALTERNATIVES
-              </h3>
-            </div>
-            <span className="table-scroll-hint">
-              SWIPE TO COMPARE ↔
-            </span>
-          </div>
-
-          <div className="competition-table-wrapper">
-            <table className="competition-table">
-              <thead>
-                <tr>
-                  <th>Player / Category</th>
-                  <th>Current Market Focus</th>
-                  <th>Operational Limitation</th>
-                  <th>The KALKI Defence Advantage</th>
-                </tr>
-              </thead>
-              <tbody>
-                {COMPETITION_COMPARISON.map((c) => (
-                  <tr key={c.competitor}>
-                    <td className="comp-name">{c.competitor}</td>
-                    <td>{c.focus}</td>
-                    <td className="comp-limit">{c.limitation}</td>
-                    <td className="comp-edge">
-                      <span className="edge-bullet">✔</span> {c.kalkiEdge}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
         </div>
       </div>
     </section>

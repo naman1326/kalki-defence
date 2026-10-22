@@ -46,7 +46,6 @@ export default function Footer({ onRequestBriefing }) {
             <div className="footer__col-title">Primary Program</div>
             <div className="footer__links">
               <a href="#system">KALKI C-UAS Platform</a>
-              <a href="#system">Vicharak Axon Edge-AI</a>
               <a href="#system">Dynamic Swarm Allocation</a>
               <a href="#system">Optical & Vision Guidance</a>
             </div>
@@ -56,7 +55,6 @@ export default function Footer({ onRequestBriefing }) {
             <div className="footer__col-title">Architecture & Mission</div>
             <div className="footer__links">
               <a href="#differentiators">Strategic Differentiators</a>
-              <a href="#differentiators">Competitive Benchmark</a>
               <a href="#mission">Problem & Solution</a>
               <a href="#contact">Tactical Briefing Channel</a>
             </div>

@@ -109,9 +109,9 @@ export const PRODUCT = {
       id: '03',
       title: 'Onboard Edge AI Vision & Optical Tracking',
       subtitle: 'Distortion-Free High-Resolution Seeker',
-      desc: 'Runs computer vision neural inference directly on the drone using the Vicharak Axon edge compute module paired with the Sony IMX415 8MP high-resolution camera. Eliminates cloud and ground-station reliance, performing instantaneous target classification and terminal tracking even under full RF jamming.',
+      desc: 'Runs computer vision neural inference directly on the drone using an onboard edge compute module paired with the Sony IMX415 8MP high-resolution camera. Eliminates cloud and ground-station reliance, performing instantaneous target classification and terminal tracking even under full RF jamming.',
       specs: [
-        { key: 'Compute Module', val: 'Vicharak Axon SBC' },
+        { key: 'Compute Module', val: 'Onboard Edge-AI SBC' },
         { key: 'Sensor', val: 'Waveshare IMX415 8MP Sony Sensor' },
         { key: 'Operation', val: '100% Autonomous in Contested EW' },
       ],
@@ -129,40 +129,6 @@ export const PRODUCT = {
     },
   ],
 }
-
-// Key Differentiators vs Competition
-export const COMPETITION_COMPARISON = [
-  {
-    competitor: 'Indrajaal',
-    focus: 'AI-Powered Drone Defence',
-    limitation: 'Scalable platform architecture, but limited military grid integration.',
-    kalkiEdge: 'Native integrated C2 interoperability & hybrid AI + kinetic interception.',
-  },
-  {
-    competitor: 'New Space Research & Technologies',
-    focus: 'Loitering & Munition Swarms',
-    limitation: 'Primarily offensive munition swarms rather than dedicated defensive Counter-UAS mesh grids.',
-    kalkiEdge: 'Specialized for scalable Counter-UAS aerial defense with lowest cost per kill.',
-  },
-  {
-    competitor: 'Kshatra Labs',
-    focus: 'Swarm Drone Manufacturing',
-    limitation: 'Hardware manufacturing without autonomous C2 dynamic task allocation stack.',
-    kalkiEdge: 'Proprietary multi-agent task allocation & dynamic mission reallocation engine.',
-  },
-  {
-    competitor: 'ASTRA Drones & Robotics',
-    focus: 'Tactical High-Speed Drones',
-    limitation: 'High-speed single drones without multi-UAV autonomous collaborative swarm allocation.',
-    kalkiEdge: 'Decentralized multi-agent cooperative defense with Edge-AI compute.',
-  },
-  {
-    competitor: 'Global Primes (Lockheed, Rafael, Thales)',
-    focus: 'High-End Air Defence Missiles',
-    limitation: 'Exorbitantly costly ($500K–$2M+ per intercept) and unsuited to mass low-cost asymmetric drone waves.',
-    kalkiEdge: '100% indigenous, mass manufacturable, lowest cost per kill, built for Indian operational realities.',
-  },
-]
 
 // 6 Core Differentiators
 export const KEY_DIFFERENTIATORS = [
@@ -202,7 +168,6 @@ export const KEY_DIFFERENTIATORS = [
 export const PARTNERS = [
   { name: 'V-NEST VIT Chennai', category: 'Technology Business Incubator' },
   { name: 'Make In India / iDEX Focus', category: 'Defence Indigenisation' },
-  { name: 'Vicharak Axon Ecosystem', category: 'Edge-AI Compute Architecture' },
   { name: 'Ministry of Defence (MoD)', category: 'Target Procurement Mandate' },
   { name: 'Critical Infrastructure Security', category: 'Perimeter C-UAS Protection' },
   { name: 'Atmanirbhar Bharat', category: 'Sovereign Defence Technology' },

@@ -98,7 +98,7 @@ export default function ProductShowcase({ onRequestBriefing }) {
                 SYS: KALKI C-UAS [AUTONOMOUS SWARM]
               </div>
               <div className="telemetry-readout telemetry-readout--tr">
-                SEEKER: EDGE-AI (VICHARAK AXON)
+                SEEKER: ONBOARD EDGE-AI
               </div>
               <div className="telemetry-readout telemetry-readout--bl">
                 C2 LINK: DEFENCE GRID ONLINE
@@ -137,9 +137,9 @@ export default function ProductShowcase({ onRequestBriefing }) {
                 <ellipse cx="60" cy="200" rx="36" ry="12" stroke="rgba(252,25,32,0.6)" strokeWidth="1.5" strokeDasharray="4 4" />
                 <ellipse cx="280" cy="200" rx="36" ry="12" stroke="rgba(252,25,32,0.6)" strokeWidth="1.5" strokeDasharray="4 4" />
 
-                {/* Onboard Vicharak Axon Edge AI Processor */}
+                {/* Onboard Edge AI Processor */}
                 <rect x="148" y="98" width="44" height="44" rx="4" fill="#090a0f" stroke="#00e5ff" strokeWidth="1.5" />
-                <text x="170" y="124" fill="#00e5ff" fontSize="9" fontFamily="monospace" textAnchor="middle" fontWeight="bold">AXON AI</text>
+                <text x="170" y="124" fill="#00e5ff" fontSize="9" fontFamily="monospace" textAnchor="middle" fontWeight="bold">EDGE AI</text>
 
                 {/* Waveshare IMX415 8MP Forward Camera Module */}
                 <circle cx="170" cy="80" r="9" fill="#fc1920" stroke="#ffffff" strokeWidth="1.5" />
