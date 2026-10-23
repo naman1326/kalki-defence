@@ -103,10 +103,9 @@ export const PRODUCT = {
       id: '03',
       title: 'Onboard Edge AI Vision & Optical Tracking',
       subtitle: 'Distortion-Free High-Resolution Seeker',
-      desc: 'Runs computer vision neural inference directly on the drone using an onboard edge compute module paired with the Sony IMX415 8MP high-resolution camera. Eliminates cloud and ground-station reliance, performing instantaneous target classification and terminal tracking even under full RF jamming.',
+      desc: 'Runs computer vision neural inference directly on the drone using an onboard edge compute module paired with a high-resolution optical tracking seeker. Eliminates cloud and ground-station reliance, performing instantaneous target classification and terminal tracking even under full RF jamming.',
       specs: [
         { key: 'Compute Module', val: 'Onboard Edge-AI SBC' },
-        { key: 'Sensor', val: 'Waveshare IMX415 8MP Sony Sensor' },
         { key: 'Operation', val: '100% Autonomous in Contested EW' },
       ],
     },

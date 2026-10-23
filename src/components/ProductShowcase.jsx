@@ -141,7 +141,7 @@ export default function ProductShowcase({ onRequestBriefing }) {
                 <rect x="148" y="98" width="44" height="44" rx="4" fill="#090a0f" stroke="#00e5ff" strokeWidth="1.5" />
                 <text x="170" y="124" fill="#00e5ff" fontSize="9" fontFamily="monospace" textAnchor="middle" fontWeight="bold">EDGE AI</text>
 
-                {/* Waveshare IMX415 8MP Forward Camera Module */}
+                {/* Forward Optical Seeker Module */}
                 <circle cx="170" cy="80" r="9" fill="#fc1920" stroke="#ffffff" strokeWidth="1.5" />
                 <circle cx="170" cy="80" r="3" fill="#ffffff" />
 
