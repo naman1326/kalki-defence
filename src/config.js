@@ -32,32 +32,32 @@ export const NAV = [
 export const TEAM_MEMBERS = [
   {
     name: 'Omkar Abhijit Jagtap',
-    role: 'Co-Founder & System Architect',
+    role: 'Co-Founder',
     linkedin: 'https://www.linkedin.com/in/omkarj23/',
   },
   {
     name: 'Naitik Agrawal',
-    role: 'Co-Founder & Hardware Engineering',
+    role: 'Co-Founder',
     linkedin: 'https://www.linkedin.com/in/naitik-agrawal-294b1032a/',
   },
   {
     name: 'Sai Amol Kadam',
-    role: 'Co-Founder & Edge AI / Vision',
+    role: 'Co-Founder',
     linkedin: 'https://www.linkedin.com/in/sai-kadam-204099320/',
   },
   {
     name: 'Shailesh Chauhan',
-    role: 'Co-Founder & Swarm Algorithms',
+    role: 'Co-Founder',
     linkedin: 'https://www.linkedin.com/in/shaileshchauhannn/',
   },
   {
     name: 'Anurag Raghuvanshi',
-    role: 'Co-Founder & Avionics Integration',
+    role: 'Co-Founder',
     linkedin: 'https://www.linkedin.com/in/anurag-raghuvanshi-330ba5384/',
   },
   {
     name: 'Govind Yadav',
-    role: 'Co-Founder & Flight Dynamics',
+    role: 'Co-Founder',
     linkedin: 'https://www.linkedin.com/in/govind-yadav-0aba25332/',
   },
 ]
